@@ -1,0 +1,14 @@
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.imagem-logo{
+    width: 80px;
+    margin-right: 10px;
+    
+}
+a.navbar-brand{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
