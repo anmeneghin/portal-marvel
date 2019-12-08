@@ -8,15 +8,15 @@ export class MarvelResultsPaginated {
     data: Data;
 }
 
-export interface Data {
+export class Data {
     offset: number;
     limit: number;
     total: number;
     count: number;
-    results: MarvelHeroe[];
+    results: MarvelHero[];
 }
 
-export interface MarvelHeroe {
+export class MarvelHero {
     id: number;
     name: string;
     description: string;
@@ -30,26 +30,26 @@ export interface MarvelHeroe {
     urls: URL[];
 }
 
-export interface Comics {
+export class Comics {
     available: number;
     collectionURI: string;
     items: ComicsItem[];
     returned: number;
 }
 
-export interface ComicsItem {
+export class ComicsItem {
     resourceURI: string;
     name: string;
 }
 
-export interface Stories {
+export class Stories {
     available: number;
     collectionURI: string;
     items: StoriesItem[];
     returned: number;
 }
 
-export interface StoriesItem {
+export class StoriesItem {
     resourceURI: string;
     name: string;
     type: ItemType;
@@ -61,7 +61,7 @@ export enum ItemType {
     InteriorStory = "interiorStory",
 }
 
-export interface Thumbnail {
+export class Thumbnail {
     path: string;
     extension: Extension;
 }
@@ -71,7 +71,7 @@ export enum Extension {
     Jpg = "jpg",
 }
 
-export interface URL {
+export class URL {
     type: URLType;
     url: string;
 }
