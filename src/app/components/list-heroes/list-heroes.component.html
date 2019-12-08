@@ -1,0 +1,8 @@
+<ul *ngIf="herois && herois.data && herois.data.results">
+    <li *ngFor="let heroi of herois.data.results">
+        <img [src]="heroi.thumbnail.path + '.' +heroi.thumbnail.extension" [alt]="heroi.name">
+        <p>
+            {{heroi.name}}
+        </p>
+    </li>
+</ul>
