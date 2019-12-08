@@ -1,0 +1,10 @@
+<div class="card">
+    <img  (click)="collapseDescription($event)" [src]="hero.thumbnail.path + '.' +hero.thumbnail.extension" [alt]="hero.name" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title" (click)="collapseDescription($event)">{{hero.name}}</h5>
+        <p class="card-text" style="display: none;">
+            {{hero.description}}
+        </p>
+        <p class="card-text"  style="display: none;" ><small class="text-muted">Quantidade de hqs: {{hero.comics.available}}</small></p>
+    </div>
+</div>
